@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: testdata-agent-backend
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  profiles:
+    default: dev
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: ${BACKEND_PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+
+test-engine:
+  allowed-base-urls: ${TEST_ENGINE_ALLOWED_BASE_URLS:http://localhost:8081}
+  max-response-chars: 20000
+  max-cases-per-run: 20
+
+data-quality:
+  storage-dir: ${DATA_QUALITY_STORAGE_DIR:./.data/uploads}
+  max-file-bytes: 10485760
+  max-rows: 10000
+  max-columns: 200
+  preview-rows: 20
+
+agent:
+  tool:
+    execution-timeout-ms: ${AI_TOOL_EXECUTION_TIMEOUT_MS:5000}
+  enabled: ${AI_AGENT_ENABLED:true}
+  openai:
+    api-key: ${OPENAI_API_KEY:}
+    base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+    model: ${OPENAI_MODEL:gpt-6-astra}
+    connect-timeout-ms: ${OPENAI_CONNECT_TIMEOUT_MS:5000}
+    read-timeout-ms: ${OPENAI_READ_TIMEOUT_MS:30000}
+    max-response-bytes: 1048576
+
+local-approval:
+  token: ${LOCAL_APPROVAL_TOKEN:}
+

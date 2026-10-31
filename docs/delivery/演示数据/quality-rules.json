@@ -1,0 +1,10 @@
+{
+  "duplicateKeyColumns": ["id"],
+  "columns": [
+    {"columnName": "id", "expectedType": "INTEGER", "required": true},
+    {"columnName": "name", "expectedType": "STRING", "required": true},
+    {"columnName": "age", "expectedType": "INTEGER", "required": true, "min": 18, "max": 65},
+    {"columnName": "score", "expectedType": "DECIMAL", "required": true, "min": 0, "max": 100},
+    {"columnName": "active", "expectedType": "BOOLEAN", "required": true}
+  ]
+}

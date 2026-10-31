@@ -1,0 +1,11 @@
+flowchart TB
+    UI[Vue 3 管理端 5174] --> API[Spring Boot API 8084]
+    API --> RUN[原测试运行服务与确定性断言]
+    API --> AGENT[受控 Agent 工具注册表]
+    API --> QUALITY[独立数据质量与清洗导出]
+    AGENT -->|审批绑定 execute_test_run| RUN
+    RUN --> DEMO[演示 API 8081]
+    RUN --> DB[(H2 文件库)]
+    QUALITY --> DB
+    AGENT -->|审计与只读证据| DB
+    AGENT -. 真实模型尚未验收 .-> MODEL[Responses API]

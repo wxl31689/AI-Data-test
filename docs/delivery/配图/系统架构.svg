@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1000" height="575" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1000 575" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1000" height="575"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-575)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1000" height="575" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="335" y="478" width="330" height="64" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="434.0" y="518.0" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,1036) scale(1,-1)">Vue 3 管理端</text>
+			<text x="364.0" y="491.0" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,982) scale(1,-1)">当前 5174   人工审核与明确执行授权</text>
+			<rect x="335" y="368" width="330" height="72" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="417.5" y="412.0" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,824) scale(1,-1)">Spring Boot API</text>
+			<text x="380.0" y="385.0" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,770) scale(1,-1)">当前 8084   参数与本机审批门禁</text>
+			<rect x="45" y="235" width="260" height="83" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="76.0" y="284.5" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,569) scale(1,-1)">接口测试与断言引擎</text>
+			<text x="79.0" y="257.5" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,515) scale(1,-1)">白名单   幂等   异步状态</text>
+			<rect x="370" y="235" width="260" height="83" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="412.0" y="284.5" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,569) scale(1,-1)">Agent 工具注册表</text>
+			<text x="392.0" y="257.5" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,515) scale(1,-1)">execute_test_run / 只读证据</text>
+			<rect x="695" y="235" width="260" height="83" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="737.0" y="284.5" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,569) scale(1,-1)">独立数据质量管道</text>
+			<text x="721.0" y="257.5" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,515) scale(1,-1)">CSV XLSX   检测   清洗导出</text>
+			<rect x="45" y="102" width="260" height="66" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="131.0" y="143.0" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,286) scale(1,-1)">演示 API</text>
+			<text x="79.0" y="116.0" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,232) scale(1,-1)">当前 8081   合成业务数据</text>
+			<rect x="370" y="102" width="260" height="66" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<text x="450.5" y="143.0" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,286) scale(1,-1)">H2 文件库</text>
+			<text x="404.0" y="116.0" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,232) scale(1,-1)">用例 运行 审核 审计 质量</text>
+			<rect x="695" y="102" width="260" height="66" rx="8" ry="8" style="stroke: rgb(14%,43%,89%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(92%,95%,98%); fill-rule: evenodd; stroke-dasharray: 5, 4;"/>
+			<text x="726.0" y="143.0" style="font-family: CN; font-size: 22px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,286) scale(1,-1)">Responses 模型服务</text>
+			<text x="761.0" y="116.0" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,232) scale(1,-1)">真实模型尚未验收</text>
+			<path d="M 500,478 L 500,440 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="500 440, 503.4797 447.2036, 496.5203 447.2036" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<text x="520.0" y="459.0" style="font-family: CN; font-size: 15px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,918) scale(1,-1)">REST</text>
+			<path d="M 405,368 L 175,318 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="175 318, 182.7784 316.1299, 181.3 322.9306" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 500,368 L 500,318 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="500 318, 503.4797 325.2036, 496.5203 325.2036" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 595,368 L 825,318 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="825 318, 818.7 322.9306, 817.2216 316.1299" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 370,276 L 305,276 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="305 276, 312.2036 272.5203, 312.2036 279.4797" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 175,235 L 175,168 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="175 168, 178.4797 175.2036, 171.5203 175.2036" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 240,235 L 410,168 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="410 168, 404.574 173.8787, 402.0222 167.404" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 500,235 L 500,168 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="500 168, 503.4797 175.2036, 496.5203 175.2036" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 765,235 L 590,168 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="590 168, 597.9716 167.3259, 595.4832 173.8253" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<path d="M 630,256 L 825,168 Z" style="stroke: rgb(8%,21%,37%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="825 168, 819.8654 174.1348, 817.0027 167.7914" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,21%,37%); fill-rule: evenodd;"/>
+			<text x="276.75" y="48" style="font-family: CN; font-size: 19px;fill: rgb(8%,21%,37%); stroke:none;" transform="translate(0,96) scale(1,-1)">测试状态由确定性断言产生   数据质量链路独立运行</text>
+			<text x="308.0" y="22" style="font-family: CN; font-size: 16px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,44) scale(1,-1)">逻辑架构   MySQL 8 为配置与脚本支持 实例尚未验收</text>
+		</g>
+	</g>
+</svg>

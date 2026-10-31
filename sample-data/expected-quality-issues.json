@@ -1,0 +1,18 @@
+{
+  "rowNumberConvention": "Header is row 1; first data row is row 2",
+  "dirtyIssueCount": 6,
+  "dirtyIssues": [
+    {"rowNumber": 3, "columnName": "name", "ruleCode": "REQUIRED"},
+    {"rowNumber": 3, "columnName": "age", "ruleCode": "TYPE_MISMATCH"},
+    {"rowNumber": 3, "columnName": "score", "ruleCode": "NUM_RANGE"},
+    {"rowNumber": 4, "columnName": "age", "ruleCode": "NUM_RANGE"},
+    {"rowNumber": 4, "columnName": "score", "ruleCode": "NUM_RANGE"},
+    {"rowNumber": 4, "columnName": "id", "ruleCode": "DUPLICATE_KEY"}
+  ],
+  "validIssueCount": 0,
+  "cleaningPreview": {"outputRowCount": 2, "changedCellCount": 2, "removedDuplicateCount": 1},
+  "remainingIssuesAfterCleaning": [
+    {"rowNumber": 3, "columnName": "age", "ruleCode": "TYPE_MISMATCH"},
+    {"rowNumber": 3, "columnName": "score", "ruleCode": "NUM_RANGE"}
+  ]
+}

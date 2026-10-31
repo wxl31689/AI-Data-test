@@ -1,0 +1,47 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Backend
+backend/target/
+demo-api/target/
+backend/.data/
+*.log
+.backups/
+.runtime-acceptance/
+.local-runtime/
+output/
+
+# Archived verification sources are intentionally excluded from this delivery
+backend/src/test/
+demo-api/src/test/
+scripts/week1-smoke.ps1
+scripts/week2-smoke.ps1
+scripts/agent-smoke.ps1
+scripts/start-backend-persistent.ps1
+scripts/configure-backend-approval.ps1
+scripts/complete-backend-upload-layout.ps1
+**/__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+
+# Local runtime data
+.data/
+uploads/
+exports/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# IDE and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+

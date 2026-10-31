@@ -1,0 +1,225 @@
+{
+  "document_release_date": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "product_version": "0.1.0",
+  "document_version": "1.1",
+  "scope": "文档与演示材料交付 不是完整真实AI最终验收通过证明",
+  "reran_full_tests_during_document_work": false,
+  "historical_xml_reports_recounted": [
+    {
+      "module": "backend",
+      "suites": 22,
+      "tests": 54,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 54
+    },
+    {
+      "module": "demo-api",
+      "suites": 2,
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 4
+    }
+  ],
+  "fresh_readonly_runtime_snapshot": {
+    "observed_at": "2026-10-31T21:17:52+08:00",
+    "evidence_id": "E07",
+    "http": [
+      {
+        "url": "http://127.0.0.1:8084/api/v1/health",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8081/demo/health",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:5174/",
+        "status": 200
+      }
+    ],
+    "pids": {
+      "testdata_backend_8084": 73012,
+      "demo_8081": 34280,
+      "frontend_5174": 78088,
+      "autoflow_8080": 44008
+    }
+  },
+  "manual_interface_run": {
+    "id": "c5515548-cf07-4b4f-9c2d-5c701bc0947f",
+    "total": 2,
+    "pass": 1,
+    "fail": 1,
+    "error": 0,
+    "pass_rate_percent": 50
+  },
+  "baseline_batch": {
+    "total": 10,
+    "pass": 9,
+    "fail": 1,
+    "pass_rate_percent": 90
+  },
+  "manual_quality": {
+    "task_id": "d61b473c-ca3e-4595-9e6a-98c99af65111",
+    "rows": 3,
+    "columns": 5,
+    "issues": 6,
+    "clean_changed_cells": 2,
+    "clean_removed_rows": 1,
+    "clean_output_rows": 2
+  },
+  "real_model_success": "未验证",
+  "model_configuration_name_only": "gpt-6-astra",
+  "paid_model_requests_during_document_work": 0,
+  "local_fixture_checks": 24,
+  "agent_complete_real_model_handoff": "NOT_READY",
+  "pending": [
+    "真实模型生成执行分析",
+    "浏览器CSV XLSX HTML实际落盘核验",
+    "XLSX页面上传",
+    "OpenAPI完整页面导入",
+    "本地审批凭据安全复核与轮换",
+    "MySQL实例验收",
+    "完整演示视频"
+  ],
+  "source_evidence_files": [
+    {
+      "id": "E01",
+      "workspace_path": ".runtime-acceptance/20261031-final/test-totals.json",
+      "bytes": 301,
+      "sha256": "2B631A7C1D981F3C75DC120FC8459352ADB1F0454B589D841614A69C37321DD4"
+    },
+    {
+      "id": "E02",
+      "workspace_path": ".runtime-acceptance/20261031-aerospace-theme/frontend-build.log",
+      "bytes": 776,
+      "sha256": "D4984BF48091CEEEB4A20F9C14EC2BEF36B70ABEAD78B1764F9EBCC73BC38C1C"
+    },
+    {
+      "id": "E03",
+      "workspace_path": ".runtime-acceptance/20261031-final/cold-core-regression.json",
+      "bytes": 778,
+      "sha256": "6675FE2AD8A6455FE04BBA4A565780D8B797F71A8EF98A11526D9CE58BAA5252"
+    },
+    {
+      "id": "E04",
+      "workspace_path": "docs/development-db-migration-acceptance-20261030.md",
+      "bytes": 13849,
+      "sha256": "DEF48490934F63ACA9AD7831EE37FBC2D1F85D47F09C3F2A80835AFE79CD79DC"
+    },
+    {
+      "id": "E04",
+      "workspace_path": ".runtime-acceptance/20261030/live-acceptance-results-final.json",
+      "bytes": 8862,
+      "sha256": "8C36C817D19F25C603ABEF27D96EE0B23A782D083ADC45DE7573C534E062E8FB"
+    },
+    {
+      "id": "E05",
+      "workspace_path": ".runtime-acceptance/20261031-cutover/persistent-instance-verification.json",
+      "bytes": 2523,
+      "sha256": "F602F999ED1DCFBAC65FE5F2599F20BFB2D6287F35FB5966F714D43C23E2DB73"
+    },
+    {
+      "id": "E06",
+      "workspace_path": "docs/final-free-acceptance-20261031.md",
+      "bytes": 14189,
+      "sha256": "E724A1708BAC77BCD28F74112D5060A63A117429F5A329A1E080B13EAE6AD912"
+    },
+    {
+      "id": "E06",
+      "workspace_path": ".runtime-acceptance/20261031-final/free-acceptance-summary.json",
+      "bytes": 769,
+      "sha256": "B70487A53CEE007C65D122F69DE055D7601820553290AB0842667A5C07DD74FC"
+    },
+    {
+      "id": "E08",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/product-manual-acceptance.md",
+      "bytes": 6012,
+      "sha256": "8678DC0BF90D3ADC4B8F581BE07BC0A9FABCBC6B2B3E6B065EDED5B83867C0BE"
+    },
+    {
+      "id": "E08",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/human-review-confirmed.json",
+      "bytes": 494,
+      "sha256": "A6BA65E1B9C8A24BC6ED144BE97C6B49460FCF66501FE1A464985270B09B62A5"
+    },
+    {
+      "id": "E09",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/interface-run.json",
+      "bytes": 1351,
+      "sha256": "15D3F992681383F4838F28138CC500E5B58A864E17BC8B441D0FBC51593B29FC"
+    },
+    {
+      "id": "E09",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/interface-report-50-percent.jpg",
+      "bytes": 88377,
+      "sha256": "C533F7CEC8E09A7C1C36C747863041CADC0D81C9986B0AD6A05251A5DD0921DE"
+    },
+    {
+      "id": "E10",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/quality-task-after-browser-analysis.json",
+      "bytes": 3175,
+      "sha256": "C3C91F1F474E821179A9116A92CBFF1F947A50BC2A80B92968B5B82E8DC98105"
+    },
+    {
+      "id": "E10",
+      "workspace_path": ".runtime-acceptance/20261031-product-manual/quality-cleaning-preview.jpg",
+      "bytes": 58125,
+      "sha256": "DFAA5A75A8599D612E5CB201B3A89EA1C086461E4EDFD55E60E205C362ECEBD5"
+    },
+    {
+      "id": "E11",
+      "workspace_path": ".runtime-acceptance/20261031-final/free-model-checks.json",
+      "bytes": 2896,
+      "sha256": "77E5744B8D5D7D53350C27DD880EE5984F74DF7EF77752121356FFB248C8804A"
+    },
+    {
+      "id": "E12",
+      "workspace_path": "sample-data/README.md",
+      "bytes": 1458,
+      "sha256": "A6601933A62C75CA29822CADB37E50B65F22220F934D08B8CB3BC23D4C321253"
+    },
+    {
+      "id": "E12",
+      "workspace_path": "sample-data/expected-quality-issues.json",
+      "bytes": 839,
+      "sha256": "7786F05C597CC8687D6A73AB0076FD60A98C5D6C33CDE6A5FAB609230A0B3A3E"
+    },
+    {
+      "id": "E12",
+      "workspace_path": "sample-data/quality-rules.json",
+      "bytes": 463,
+      "sha256": "1976FD54DD3F1131BDA344B208FA74749DD0260E5984620E3A924E691C66E779"
+    },
+    {
+      "id": "E12",
+      "workspace_path": "sample-data/cleaning-plan.json",
+      "bytes": 374,
+      "sha256": "C1F7A4DECA12175272C9EDB763E6553DB5849D7AB9FCDFC75719629C6A1DC366"
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "01_项目交付说明书.pdf",
+      "pages": 8,
+      "bytes": 385544,
+      "sha256": "F7D0F8808EEF4E878E295CDBE9C2E80F2488DA31B7B25A9E47EAB645710A2670"
+    },
+    {
+      "file": "02_人工演示操作手册.pdf",
+      "pages": 6,
+      "bytes": 286382,
+      "sha256": "8BC064A39773AC8AD36D0BD0EEFA8539F1C61CFDF067A46BD5E310DF32FA80D8"
+    },
+    {
+      "file": "03_项目验收记录表.pdf",
+      "pages": 6,
+      "bytes": 164754,
+      "sha256": "C4B6BDF4693D9F11CB26ACA00DD9C0DCDBDBAA874A454B31D5E6814E82DEAB17"
+    }
+  ]
+}

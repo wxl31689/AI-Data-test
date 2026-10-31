@@ -1,0 +1,11 @@
+{
+  "removeDuplicates": true,
+  "duplicateKeyColumns": ["id"],
+  "columns": [
+    {"columnName": "id", "trimWhitespace": true},
+    {"columnName": "name", "trimWhitespace": true, "emptyReplacement": "Unknown"},
+    {"columnName": "age", "trimWhitespace": true},
+    {"columnName": "score", "trimWhitespace": true},
+    {"columnName": "active", "trimWhitespace": true}
+  ]
+}

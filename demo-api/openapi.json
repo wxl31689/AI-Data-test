@@ -1,0 +1,188 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "车辆业务演示 API",
+    "version": "1.0.0",
+    "description": "TestData Agent 的固定、可授权、可复现测试目标"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8081",
+      "description": "本地演示环境"
+    }
+  ],
+  "paths": {
+    "/demo/health": {
+      "get": {
+        "operationId": "getDemoHealth",
+        "summary": "查询演示服务状态",
+        "responses": {
+          "200": {
+            "description": "服务正常",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/DemoHealthResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/cars": {
+      "get": {
+        "operationId": "searchCars",
+        "summary": "分页查询车辆",
+        "parameters": [
+          { "name": "brand", "in": "query", "schema": { "type": "string" } },
+          { "name": "minPrice", "in": "query", "schema": { "type": "number", "minimum": 0 } },
+          { "name": "maxPrice", "in": "query", "schema": { "type": "number", "minimum": 0 } },
+          { "name": "page", "in": "query", "schema": { "type": "integer", "minimum": 0, "default": 0 } },
+          { "name": "pageSize", "in": "query", "schema": { "type": "integer", "minimum": 1, "maximum": 100, "default": 20 } }
+        ],
+        "responses": {
+          "200": {
+            "description": "车辆分页结果",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/CarPage" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" }
+        }
+      }
+    },
+    "/demo/cars/{id}": {
+      "get": {
+        "operationId": "getCarById",
+        "summary": "查询车辆详情",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer", "format": "int64", "minimum": 1 }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "车辆详情",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Car" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/demo/orders": {
+      "post": {
+        "operationId": "createOrder",
+        "summary": "创建车辆订单",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreateOrderRequest" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "订单已创建",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/OrderResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    }
+  },
+  "components": {
+    "responses": {
+      "BadRequest": {
+        "description": "请求参数错误",
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+          }
+        }
+      },
+      "NotFound": {
+        "description": "资源不存在",
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+          }
+        }
+      }
+    },
+    "schemas": {
+      "DemoHealthResponse": {
+        "type": "object",
+        "required": ["status", "service", "checkedAt"],
+        "properties": {
+          "status": { "type": "string", "example": "UP" },
+          "service": { "type": "string", "example": "vehicle-demo-api" },
+          "checkedAt": { "type": "string", "format": "date-time" }
+        }
+      },
+      "Car": {
+        "type": "object",
+        "required": ["id", "brand", "model", "year", "price", "mileageKm"],
+        "properties": {
+          "id": { "type": "integer", "format": "int64", "example": 1001 },
+          "brand": { "type": "string", "example": "比亚迪" },
+          "model": { "type": "string", "example": "宋 PLUS" },
+          "year": { "type": "integer", "example": 2024 },
+          "price": { "type": "number", "example": 159800 },
+          "mileageKm": { "type": "integer", "format": "int64", "example": 12000 }
+        }
+      },
+      "CarPage": {
+        "type": "object",
+        "required": ["items", "total", "page", "pageSize"],
+        "properties": {
+          "items": { "type": "array", "items": { "$ref": "#/components/schemas/Car" } },
+          "total": { "type": "integer", "format": "int64" },
+          "page": { "type": "integer" },
+          "pageSize": { "type": "integer" }
+        }
+      },
+      "CreateOrderRequest": {
+        "type": "object",
+        "required": ["carId", "quantity"],
+        "properties": {
+          "carId": { "type": "integer", "format": "int64", "minimum": 1 },
+          "quantity": { "type": "integer", "minimum": 1, "maximum": 10 }
+        }
+      },
+      "OrderResponse": {
+        "type": "object",
+        "properties": {
+          "orderId": { "type": "string" },
+          "carId": { "type": "integer", "format": "int64" },
+          "quantity": { "type": "integer" },
+          "unitPrice": { "type": "number" },
+          "totalPrice": { "type": "number" },
+          "status": { "type": "string", "example": "CREATED" }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

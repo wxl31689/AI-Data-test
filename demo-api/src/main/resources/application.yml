@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: testdata-agent-demo-api
+
+server:
+  port: ${DEMO_API_PORT:8081}
+  error:
+    include-message: never
+    include-stacktrace: never
+

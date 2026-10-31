@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" fill="none" role="img" aria-labelledby="title">
+  <title id="title">戴眼镜、使用电脑的程序员</title>
+  <defs>
+    <linearGradient id="space" x1="8" y1="4" x2="80" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123566"/>
+      <stop offset="1" stop-color="#2469B5"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="23" y1="58" x2="66" y2="81" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#ACD1FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="88" height="88" rx="22" fill="url(#space)"/>
+  <circle cx="69" cy="18" r="2" fill="#C1E3FF"/>
+  <path d="M15 22h6m-3-3v6M70 36h4" stroke="#72B9FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M21 69c0-13 10-22 23-22s23 9 23 22" fill="#4F9BEA"/>
+  <path d="m36 51 8 8 8-8" fill="#EAF4FF"/>
+  <path d="M27 31c0-13 7-20 18-20 12 0 18 8 18 21v12H26z" fill="#091C38"/>
+  <rect x="29" y="22" width="30" height="31" rx="14" fill="#F1C3A5"/>
+  <path d="M28 29c-1-12 9-19 18-18 8 0 15 7 15 18-8-1-13-4-17-8-4 6-10 8-16 8Z" fill="#102340"/>
+  <path d="M24 34v-5c0-12 8-20 20-20s20 8 20 20v5" stroke="#6AB8FF" stroke-width="3" stroke-linecap="round"/>
+  <rect x="21" y="31" width="7" height="14" rx="3.5" fill="#91CCFF"/>
+  <rect x="60" y="31" width="7" height="14" rx="3.5" fill="#91CCFF"/>
+  <g stroke="#183454" stroke-width="2.3">
+    <rect x="30.5" y="32" width="11" height="8" rx="3" fill="#EAF5FF"/>
+    <rect x="46.5" y="32" width="11" height="8" rx="3" fill="#EAF5FF"/>
+    <path d="M42 35h4M27 34h3m28 0h3"/>
+  </g>
+  <path d="M40 45c2.5 2 5.5 2 8 0" stroke="#A36758" stroke-width="2" stroke-linecap="round"/>
+  <path d="M64 42v3c0 4-5 6-10 6" stroke="#91CCFF" stroke-width="2" stroke-linecap="round"/>
+  <rect x="50" y="49" width="7" height="4" rx="2" fill="#C9E7FF"/>
+  <rect x="21" y="59" width="46" height="23" rx="4" fill="url(#screen)"/>
+  <path d="m36 66-5 4 5 4m16-8 5 4-5 4m-6-10-4 12" stroke="#2169BF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 82h52" stroke="#EAF4FF" stroke-width="3" stroke-linecap="round"/>
+</svg>

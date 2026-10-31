@@ -1,0 +1,22 @@
+{
+  "recordDate": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "productVersion": "0.1.0",
+  "publicSourceContainsTestSources": false,
+  "historicalTestsRerunDuringPublication": false,
+  "historicalBackend": {"suites": 22, "tests": 54, "passed": 54, "failures": 0, "errors": 0, "skipped": 0},
+  "historicalDemoApi": {"suites": 2, "tests": 4, "passed": 4, "failures": 0, "errors": 0, "skipped": 0},
+  "historicalLocalFixtureChecks": 24,
+  "realModelSuccess": "NOT_VERIFIED",
+  "publicationBuild": {
+    "backend": "PASSED_ISOLATED_OFFLINE_PACKAGE",
+    "demoApi": "PASSED_ISOLATED_OFFLINE_PACKAGE",
+    "frontendTypecheckAndBuild": "PASSED",
+    "backendAndDemoCommand": "mvn -o -Dmaven.test.skip=true package",
+    "frontendCommand": "npm run build -- --outDir <isolated-output>",
+    "testSourcesExecuted": 0,
+    "existingServicesRestarted": false
+  },
+  "evidenceSummary": "delivery/证据/验收证据摘要.json",
+  "testRecovery": "Maintainer local recovery archive containing original tests and POM files; not published"
+}

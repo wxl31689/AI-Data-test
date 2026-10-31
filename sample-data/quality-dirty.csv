@@ -1,0 +1,4 @@
+id,name,age,score,active
+1, Alice ,25,88.5,true
+2,,not-number,101,true
+2,Bob,17,-1,false
